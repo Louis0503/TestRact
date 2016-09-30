@@ -35,10 +35,4 @@ MyComponent.defaultProps = {
  name: 'defaultName', 
 };
 
-
-//Functional Component :單純地 render UI 的 stateless components
-const TestComponent = () => (
-    <div>Hello, TestComponent</div>
-  );
-
 export default MyComponent;
