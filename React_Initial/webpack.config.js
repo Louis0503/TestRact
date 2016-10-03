@@ -45,5 +45,6 @@ module.exports = {
   devServer: {
     inline: true,
     port: 8008,
+    host: process.env.IP, // "10.0.0.106", "localhost"
   }
 };
