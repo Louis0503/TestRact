@@ -1,3 +1,4 @@
+'use strict'
 import React from 'react';
 // Mounting：已插入真實的 DOM
 // Updating：正在被重新渲染
