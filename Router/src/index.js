@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, hashHistory, IndexRoute } from 'react-router';
-import About from './components/About';
+import Flux from './components/Flux';
 import App from './components/App';
 import Contacts from './components/Contacts';
 import Home from './components/Home';
@@ -12,7 +12,7 @@ const routes = (
   <Route path="/" component={App}>
     <IndexRoute component={Home} />
     <Route path="/repos/:name" component={Repos} />
-    <Route path="/about" component={About} />
+    <Route path="/flux" component={Flux} />
     <Route path="/user" component={User} />
     <Route path="/contacts" component={Contacts} />
   </Route>

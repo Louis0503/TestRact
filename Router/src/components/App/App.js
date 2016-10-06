@@ -11,10 +11,10 @@ const App = props => (
         <IndexLink to="/" activeClassName="active">Home</IndexLink>
       </li>
       <li>
-        <Link to="/about" activeStyle={{ color: 'green' }}>About</Link>
+        <Link to="/flux" activeStyle={{ color: 'green' }}>Flux</Link>
       </li>
       <li>
-        <Link to="/repos/FuckYou" activeStyle={styles.active}>Repos</Link>
+        <Link to="/repos/ThankYou" activeStyle={styles.active}>Repos</Link>
       </li>
       <li>
         <Link to="/user" activeClassName="active">User</Link>
