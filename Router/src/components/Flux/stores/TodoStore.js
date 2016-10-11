@@ -8,10 +8,6 @@ const store = {
 };
 
 class TodoStoreClass extends EventEmitter {
-  constructor(props) {
-    super(props);
-    this.text = store;
-  }
   addChangeListener(callback) {
     this.on(ADD_TODO, callback);
   }
@@ -19,7 +15,7 @@ class TodoStoreClass extends EventEmitter {
     this.removeChangeListener(ADD_TODO, callback);
   }
   getToDos() {
-    return this.text.todos;
+    return store.todos;
   }
 }
 
@@ -29,7 +25,7 @@ FluxDispatcher.register((action) => {
   switch (action.type) {
     case ADD_TODO:
       store.todos.push(action.payload.text);
-      TodoStore.emmit(ADD_TODO);
+      TodoStore.emit(ADD_TODO);
       break;
     default:
       return true;
@@ -37,5 +33,5 @@ FluxDispatcher.register((action) => {
   return true;
 });
 
-export { TodoStore as default };
+export default TodoStore;
 

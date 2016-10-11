@@ -1,8 +1,8 @@
 import FluxDispatcher from '../dispatcher/FluxDispatcher';
 import { ADD_TODO } from '../constants/actionTypes';
 
-const ToDoAction = {
-  addToDo(text) {
+const TodoActions = {
+  addTodo(text) {
     FluxDispatcher.handleAction(
       {
         type: ADD_TODO,
@@ -14,4 +14,5 @@ const ToDoAction = {
   },
 };
 
-export { ToDoAction as default };
+export { TodoActions as default };
+
