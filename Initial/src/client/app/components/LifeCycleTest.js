@@ -29,17 +29,17 @@ class LifeCycleTest extends React.Component{
 	componentWillUpdate() {
     	console.log('componentWillUpdate');
   	}
-  	componentDidUpdate() {
-    	console.log('componentDidUpdate');
-  	}
-  	componentWillUnmount() {
-    	console.log('componentWillUnmount');
-  	}
-  	render() {
-	    return (
-	      <div onClick={this.handleClick}>State : {this.state.name}</div>
-	    );
-  	}
+	componentDidUpdate() {
+  	console.log('componentDidUpdate');
+	}
+	componentWillUnmount() {
+  	console.log('componentWillUnmount');
+	}
+	render() {
+    return (
+      <div onClick={this.handleClick}>State : {this.state.name}</div>
+    );
+	}
 };
 
 export default LifeCycleTest;

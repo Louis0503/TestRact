@@ -3,7 +3,7 @@ import FluxDispatcher from '../dispatcher/FluxDispatcher';
 import { ADD_TODO } from '../constants/actionTypes';
 
 const store = {
-  todos: [],
+  todos: [1, 2, 3],
   editing: false,
 };
 

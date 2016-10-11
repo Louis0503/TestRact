@@ -15,6 +15,9 @@ class TodoList extends Component {
       todos: [],
     };
   }
+  componentWillMount() {
+    this.setState(getAppState());
+  }
   componentDidMount() {
     TodoStore.addChangeListener(this.onChange);
   }

@@ -27,7 +27,7 @@ class TodoHeader extends Component {
 
   render() {
     return (
-      <div>
+      <div className="active">
         <h1>TodoFlux</h1>
         <div>
           <input
