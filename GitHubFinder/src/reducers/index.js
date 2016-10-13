@@ -1,9 +1,9 @@
 // use redux-immutable to make sure state is immutable
 import { combineReducers } from 'redux-immutable';
-import todoReducers from './data/todoReducers';
+import todo from './data/todoReducers';
 
 const rootReducer = combineReducers({
-  todoReducers,
+  todo,
 });
 
 export default rootReducer;

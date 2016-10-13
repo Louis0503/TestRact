@@ -7,7 +7,7 @@ import {
 
 const mapStateToProps = (state) => ({
   // get todo state from state
-  todos: state.getIn(['todoReducers', 'todos']),
+  todos: state.getIn(['todo', 'todos']),
 });
 
 const mapDispatchToProps = (dispatch) => ({

@@ -7,9 +7,8 @@ import {
 } from '../../actions';
 
 const mapStateToProps = (state) => ({
-   // get todo state from state
-  todo: state.getIn(['todoReducers', 'todo']),
-  // todo: state.todoReducers
+  // get todo state from state
+  todo: state.getIn(['todo', 'todo']),
 });
 
 const mapDispatchToProps = (dispatch) => ({
